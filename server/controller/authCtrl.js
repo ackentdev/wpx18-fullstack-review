@@ -43,6 +43,7 @@ module.exports = {
         res.sendStatus(200)
     },
     userSession: (req, res) => {
+        console.log('hit from redux!')
         res.status(200).send(req.session.user)
     }
 }
